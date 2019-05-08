@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div class="container">
+        <p id="description">Let us know how we can improve FreeCodeCamp</p>
+
+        <form action="#" id="survey-form">
+            <div>
+                <label for="name" id="name-label">Name:</label>
+                <input class="field" id="name" type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div>
+                <label for="email" id="email-label">Email:</label>
+                <input class="field" id="email" type="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div>
+                <label for="number" id="number-label">Age:</label>
+                <input class="field" id="number" type="number" min=13 max=150 placeholder="Age" required>
+            </div>
+
+            <div>
+                <label for="role">Which option best describes your current role?</label>
+                <select id="dropdown" name="role">
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full Time Job</option>
+                    <option value="full-time-learner">Full Time Learner</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label>How likely is that you would recommend freeCodeCamp to a friend?</label>
+                <ul>
+                    <li>
+                        <input type="radio" name="recommend-choice" id="rec-choice-1" value="definitely">
+                        <label class="radio-label" for="rec-choice-1">Definitely</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="recommend-choice" id="rec-choice-2" value="maybe">
+                        <label class="radio-label" for="rec-choice-2">Maybe</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="recommend-choice" id="rec-choice-3" value="not-sure">
+                        <label class="radio-label" for="rec-choice-3">Not sure</label>
+                    </li>
+                </ul>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
